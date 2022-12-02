@@ -20,7 +20,7 @@ function App() {
       <StateBox></StateBox>
       <PropsParent />
       <TestState />
-      
+      <hr />
       <EventBox />
     </div>
   );
