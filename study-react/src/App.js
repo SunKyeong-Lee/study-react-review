@@ -1,14 +1,15 @@
-import './App.css';
-import StateBox from './components/StateBox'; // ??
-import PropsParent from './components/PropsParent';
-import TestState from './components/TestState';
-import EventBox from './components/EventBox';
-import TestEvent from './components/TestEvent';
-import Hook from './components/Hook';
-import Testhook from './components/Testhook';
-import APIComp from './components/APIComp';
+import "./App.css";
+import StateBox from "./components/StateBox"; // ??
+import PropsParent from "./components/PropsParent";
+import TestState from "./components/TestState";
+import EventBox from "./components/EventBox";
+import TestEvent from "./components/TestEvent";
+import Hook from "./components/Hook";
+import Testhook from "./components/Testhook";
+import APIComp from "./components/APIComp";
+import TestAPI from "./components/TestAPI";
 
-// App 안에 원하는 내용을 바로 작성할 수 있지만, 
+// App 안에 원하는 내용을 바로 작성할 수 있지만,
 // 각 내용을 컴포넌트로 만들어서 화면에 출력을 하고 있다.
 // 빈 컴포넌트를 먼저 만들고 App으로 불러와서 화면을 보고나서 작성
 function App() {
@@ -31,8 +32,9 @@ function App() {
       <hr />
       <Hook />
       <Testhook />
-       */}
       <APIComp />
+       */}
+      <TestAPI />
     </div>
   );
 }

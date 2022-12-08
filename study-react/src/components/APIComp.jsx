@@ -21,11 +21,11 @@ const APIComp = () => {
       // await를 쓰지 않으면 Promise 데이터로 들고오게 된다.
       // Promise는 값을 가져오겠다고 약속한 데이터 형식
       //  => then, await를 이용하여 값을 가져와서 사용
-      const responese = await fetch(
+      const response = await fetch(
         "https://newsapi.org/v2/top-headlines?country=kr&apiKey=c4c09dd0ba45435cb60e93cd10259c2a"
       );
-      console.log(responese);
-      const body = await responese.json(); // 자바스크립트 객체로 만들기
+      console.log(response);
+      const body = await response.json(); // 자바스크립트 객체로 만들기
       console.log(body);
       setNews(body);
       // useState에 들어가는 값이 클 때, 바로 반영이 되지 않는 경우가 있다.
