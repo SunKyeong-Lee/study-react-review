@@ -8,6 +8,8 @@ import AboutMain from "./AboutMain";
 import AboutTest from "./AboutTest";
 import Home from "./Home";
 import Error from "./Error";
+import Board from "./Board";
+import BoardPage from "./BoardPage";
 
 const RootIndex = () => {
   return (
@@ -43,6 +45,17 @@ const RootIndex = () => {
          * 단, *을 사용할 경우, 사용하지 않는 주소가 없기에 *을 사용한 주소는 항상 보인다
          */}
         <Route path="test" element={<Home />} />
+        {/** 주소를 통해서 값을 전달 */}
+        <Route path="/board" element={<Board />}>
+          {/** 
+           * 주소로 전달하는 값을 params 값이라고 한다
+           * 이 값은 { path의:이름 : "주소에 작성해준 값" }
+           * :id는 그 사용할 공간의 이름이기 때문에 원하는 이름으로 작성해서 사용
+           * 이와같이 params값을 사용한 주소는 어떤 값이 들어와도 같은 컴포넌트를 출력한다.
+           */}
+          <Route path="/board/:id" element={<BoardPage name="게시판" />} />
+          <Route path="/board/about" element={<About />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
