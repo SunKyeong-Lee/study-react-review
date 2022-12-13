@@ -10,6 +10,9 @@ import Home from "./Home";
 import Error from "./Error";
 import Board from "./Board";
 import BoardPage from "./BoardPage";
+import LinkState from "./LinkState";
+import LocationState from "./LocationState";
+import QueryString from "./QueryString";
 
 const RootIndex = () => {
   return (
@@ -33,6 +36,9 @@ const RootIndex = () => {
            */}
           <Route index element={<AboutMain />} />
         </Route>
+        <Route path='/link' element={<LinkState />} />
+        <Route path='/location' element={<LocationState />} />
+        <Route path='/query' element={<QueryString />} />
         <Route path="*" element={<Error />} />
       </Routes>
 
