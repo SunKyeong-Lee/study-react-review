@@ -1,0 +1,70 @@
+th,
+td {
+  padding: 1rem 2rem;
+}
+table,
+th,
+td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+table {
+  text-align: center;
+  margin: 1rem;
+}
+tr:hover {
+  background-color: #ededed;
+}
+table > tbody > tr > td:nth-child(2):hover {
+  cursor: pointer;
+}
+
+.board-page,
+.modify-page {
+  margin: 1rem;
+}
+.board-page > div:first-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+.board-page > div:first-child > div:first-child {
+  margin-right: auto;
+}
+.board-page > div:first-child > div:last-child {
+  margin-left: auto;
+}
+.board-page > div:nth-child(3) {
+  margin: 2rem 0;
+  font-weight: bold;
+}
+.board-page > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.modify-page > div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+.modify-page input {
+  width: 80%;
+}
+.modify-page > div:first-child > div:first-child {
+  margin-right: auto;
+}
+.modify-page > div:first-child > div:last-child {
+  margin-left: auto;
+}
+.modify-page textarea {
+  width: 100%;
+  margin: 2rem 0;
+}
