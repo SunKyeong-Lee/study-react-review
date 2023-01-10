@@ -10,6 +10,7 @@ import APIComp from "./components/APIComp";
 import TestAPI from "./components/TestAPI";
 import RootIndex from "./pages/RootIndex";
 import StoreIndex from "./Redux/StoreIndex";
+import ReduxToolkitIndex from './ReduxToolkit/ReduxToolkitIndex';
 
 // App 안에 원하는 내용을 바로 작성할 수 있지만,
 // 각 내용을 컴포넌트로 만들어서 화면에 출력을 하고 있다.
@@ -37,8 +38,9 @@ function App() {
       <APIComp />
       <TestAPI />
       <RootIndex />
-       */}
       <StoreIndex />
+       */}
+      <ReduxToolkitIndex />
     </div>
   );
 }
